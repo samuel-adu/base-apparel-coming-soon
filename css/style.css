@@ -15,6 +15,7 @@
 /* || BASE STYLES =============================== */
 body {
   background-image: var(--gradient-1);
+  background-size: cover;
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   color: var(--clr-primary);
@@ -32,6 +33,7 @@ h1 {
   color: var(--clr-neutral);
   line-height: 1.1;
   text-align: center;
+  letter-spacing: 0.25em;
 }
 
 h1 span {
@@ -93,6 +95,9 @@ main {
   width: 100%;
   position: relative;
 }
+input::placeholder {
+  color: var(--clr-primary);
+}
 
 .btn {
   background-image: var(--gradient-2);
@@ -126,6 +131,7 @@ main {
   body {
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   main {
@@ -134,6 +140,10 @@ main {
     align-items: center;
     flex: 1;
     text-align: start;
+  }
+
+  .container {
+    width: 50%;
   }
 
   h1,
