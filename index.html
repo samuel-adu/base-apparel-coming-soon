@@ -42,17 +42,25 @@
 
       <section class="advert">
         <div class="container">
-          <h1>we're <span class="lead">coming soon</span></h1>
+          <h1><span class="lead">we're </span>coming soon</h1>
           <p>
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
 
-          <input placeholder="Email Address" type="email" />
-          <button class="btn">
-            <img src="images/icon-arrow.svg" alt="arrow facing forward" />
-          </button>
+          <form class="form">
+            <input id="email" placeholder="Email Address" type="email" />
+            <button class="btn">
+              <img src="images/icon-arrow.svg" alt="arrow facing forward" />
+            </button>
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error-icon"
+            />
+            <small class="error-message">Please provide a valid email</small>
+          </form>
         </div>
       </section>
     </main>
