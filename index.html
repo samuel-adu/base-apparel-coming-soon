@@ -22,57 +22,64 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <img class="logo" src="images/logo.svg" alt="logo" />
-      </div>
-    </header>
-
-    <main>
-      <div class="hero">
-        <picture>
-          <source media="(min-width: 679px)" srcset="images/hero-desktop.jpg" />
-          <img
-            class="hero__image"
-            src="images/hero-mobile.jpg"
-            alt="lady posing in front of a flower"
-          />
-        </picture>
-      </div>
-
-      <section class="advert">
+    <div class="wrapper">
+      <header>
         <div class="container">
-          <h1><span class="lead">we're </span>coming soon</h1>
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-
-          <form class="form">
-            <input id="email" placeholder="Email Address" type="email" />
-            <button class="btn">
-              <img src="images/icon-arrow.svg" alt="arrow facing forward" />
-            </button>
-            <img
-              class="error-icon"
-              src="./images/icon-error.svg"
-              alt="error-icon"
-            />
-            <small class="error-message">Please provide a valid email</small>
-          </form>
+          <img class="logo" src="images/logo.svg" alt="logo" />
         </div>
-      </section>
-    </main>
+      </header>
+
+      <main>
+        <div class="hero">
+          <picture>
+            <source
+              media="(min-width: 679px)"
+              srcset="images/hero-desktop.jpg"
+            />
+            <img
+              class="hero__image"
+              src="images/hero-mobile.jpg"
+              alt="lady posing in front of a flower"
+            />
+          </picture>
+        </div>
+
+        <div class="container">
+          <section class="advert">
+            <h1><span class="lead">we're </span>coming soon</h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+
+            <form class="form">
+              <input id="email" placeholder="Email Address" type="email" />
+              <button class="btn">
+                <img src="images/icon-arrow.svg" alt="arrow facing forward" />
+              </button>
+              <img
+                class="error-icon"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <small class="error-message">Please provide a valid email</small>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >
-        Coded by <a href="#">Samuel Adu</a>.
-      </p>
+      <div class="container">
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+          Coded by <a href="#">Samuel Adu</a>.
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -15,7 +15,6 @@
 /* || BASE STYLES =============================== */
 body {
   background-image: var(--gradient-1);
-  background-size: cover;
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   color: var(--clr-primary);
@@ -58,20 +57,19 @@ a {
   margin-inline: auto;
 }
 
+.wrapper {
+  min-height: calc(100vh - 12.65px);
+  /* min-height: 100vh; */
+}
+
 /*  || MAIN STYLES ================================*/
 header {
   padding-block: 2rem;
 }
 
-main {
-  min-height: calc(100vh - 12px);
-}
-
-/* 
 .hero__image {
   width: 100%;
-} 
-*/
+}
 
 .attribution {
   font-size: 11px;
@@ -127,27 +125,47 @@ input::placeholder {
 }
 
 /* || MEDIA QUERIES ======================================*/
+@media (min-width: 535px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @media (min-width: 769px) {
   body {
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-size: cover;
   }
 
   main {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    flex: 1;
-    text-align: start;
+    justify-content: center;
+    min-height: calc(100vh - 115px);
   }
 
   .container {
-    width: 50%;
+    width: 80%;
+  }
+
+  .advert {
+    width: 35%;
   }
 
   h1,
   p {
+    text-align: left;
+  }
+
+  .hero {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
     text-align: left;
   }
 }
